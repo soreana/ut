@@ -10,7 +10,7 @@ require('./models/Tags');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
-
+mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/ut',function (err) {
   if(err){
     console.error('Error: منگو دیبی رو روشن کن نادون :)');
