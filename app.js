@@ -8,6 +8,15 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+var mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost/ut',function (err) {
+  if(err){
+    console.error('Error: منگو دیبی رو روشن کن نادون :)');
+    console.error('Command to start MongoDB is "mongod"');
+  }
+});
+
 var app = express();
 
 // view engine setup
