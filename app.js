@@ -9,6 +9,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var mongoose = require('mongoose');
+require('./models/Tags');
 
 mongoose.connect('mongodb://localhost/ut',function (err) {
   if(err){
