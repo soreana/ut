@@ -5,7 +5,7 @@ var Tag = mongoose.model('Tag');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'UT Network' });
 });
 
 router.post('/tag', function(req, res, next) {
