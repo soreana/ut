@@ -29,4 +29,12 @@ router.get('/tags',function (req,res,next){
   });
 });
 
+router.post('/event',function (req, res, next) {
+  res.json({});
+});
+
+router.get('/events',function (req, res, next) {
+  res.json({});
+});
+
 module.exports = router;
