@@ -8,6 +8,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'UT Network' });
 });
 
+router.get('/dashboard',function (req,res,next) {
+  res.render('dashboard');
+});
+
 router.post('/tag', function(req, res, next) {
   var tag = new Tag(req.body);
 
